@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi primera app</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 80px; }
+    button { font-size: 24px; padding: 12px 24px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Mi primera app</h1>
+  <p id="numero" style="font-size: 48px;">0</p>
+  <button onclick="sumar()">Sumar 1</button>
+
+  <script>
+    let n = 0;
+    function sumar() {
+      n++;
+      document.getElementById("numero").textContent = n;
+    }
+  </script>
+</body>
+</html>
